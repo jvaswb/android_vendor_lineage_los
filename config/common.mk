@@ -218,6 +218,11 @@ PRODUCT_PACKAGES += \
       LMOFreeform \
       LMOFreeformSidebar
 
+# Google Apps
+ifeq ($(WITH_GAPPS),true)
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+endif
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
