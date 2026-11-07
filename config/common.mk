@@ -207,6 +207,11 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/wipe-frp.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/wipe-frp
 
+# LMOFreeform
+PRODUCT_PACKAGES += \
+      LMOFreeform \
+      LMOFreeformSidebar
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
